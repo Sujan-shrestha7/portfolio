@@ -1,0 +1,242 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(212, 208, 208); 
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 60px;
+    border: 2px solid rgb(18, 17, 17) ;
+    border-radius: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+}
+
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+    .navigation a{
+    position:relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 40px;
+}
+ .navigation a::after{
+    content: '';
+    position: absolute;
+    width: 105%;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .6s;
+ } 
+
+ .navigation a:hover::after {
+    transform-origin:left;
+    transform: scaleX(1);
+ }
+
+ /* .navigation .button{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 1s;
+ } */
+ .navigation .buttonn{
+    font-size: 1.3em;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    border-color: transparent;
+    align-items: center;
+    cursor: pointer;
+ }
+ 
+.navigation .button:hover{
+    background: #fff;
+    color: black;
+}
+/* to do list css */
+
+.toDoContainer{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(212, 208, 208); 
+    padding-top: 40px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #363333;
+    margin: 100px auto 20px;
+    margin-top: 120px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px black;
+}
+.todo-app h2{
+    color: #011536;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.todo-app h2 img{
+
+    width: 35px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.toDoinput-box{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+.toDoButton{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background:black;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgb(243, 239, 239);
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    color: #f2ecec;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+ul li::before{
+    position: absolute;
+    content: '';
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 6px;
+}
+ul li.done{
+    color:#111111;
+    text-decoration: line-through;
+}
+ ul li.done::before{
+    background-image: url(done.png);
+    
+ }
+
+ ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 70px;
+    height: 40px;
+    font-size: 22px;
+    color: #f2ecec;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+ }
+
+ ul li span:hover{
+    cursor: pointer;
+ }
+/* CSS for status dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(54, 53, 53); /* Change background color */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: white; /* Change text color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555; /* Change hover background color */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

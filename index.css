@@ -406,9 +406,8 @@ header .menuLogo {
 .skillName {
     color: #f2fcec;
     font-size: 1.5em;
-    font-weight: 500;
+    font-weight: 600;
     margin: 10px 20px; 
-    text-decoration: underline;
 }
 
 .skillsLabel {
@@ -498,6 +497,7 @@ header .menuLogo {
     color: #f2fcec;
     font-size: 1.5em;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 #contact form {
@@ -564,6 +564,13 @@ header .menuLogo {
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
+}
+.logo-link{
+    margin-top: 10px;
+    text-align: center;
+    color: #f2fcec;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 footer ul{
     list-style: none;
