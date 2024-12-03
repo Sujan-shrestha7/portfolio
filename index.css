@@ -218,116 +218,70 @@ header .menuLogo {
 
 /* Resume */
 #resume {
-    padding: 50px;
+    padding: 50px 20px;
     background-color: rgb(20, 4, 54);
-    border: 35px solid rgb(10, 5, 20) ;
+    border: 15px solid rgb(10, 5, 20) ;
     border-radius: 20px;
     color: #f2fcec;
-    width: 100%;
-    height: auto;
-}
-.aboutMe {
-    font-size: 2rem;
-    margin-left: 432px;
-    color: #f2fcec;
-}
-.resumeClass{
-    display: flex;
-    justify-content: space-between;
-    /* margin: 20px; */
-    /* box-shadow: 5px 5px 50px rgb(56, 55, 55); */
-    border-radius: 10px;
-}
-.resumeClass h1{
-    position: absolute;
-    margin:0 400px ;
-}
-.myself{
-    position: relative;
-    /* margin-right: 30px; */
-}
-.myself img{
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
 }
 
-.briefs{
+.resumeClass {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    /* box-shadow: 0 0 30px rgba(8, 7, 0.5); */
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.resumeIntro {
+    width: 100%;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.resumeCoding, .resumeGuitar, .resumeAstro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    margin: 20px 0;
+    font-size: 1rem;
+    box-shadow: 0 0 30px rgba(8, 7, 0.5);
+    border-radius: 10px;
+}
+
+.resumeCoding img, .resumeGuitar img, .resumeAstro img {
     width: 100%;
     height: auto;
-    margin: 20px 15px 0px 35px;
-    font-size: 1rem;
-    font-family: serif;
-    padding: 30px 0;
-    font-size: 1.2rem;
-    overflow-wrap: break-word;
+    border-radius: 15px;
+    max-width: 250px;
+    margin: 20px;
+}
+
+.codingIntro,.guitarIntro, .astroIntro{
+    width: 230px;
 }
 .wannaKnow{
+    margin-top:50px;
     font-size: 1.3rem;
-    text-align: center;
 }
 .wannaKnow a{
     color: purple;
-}
-@media (max-width: 768px) {
-    .resumeClass {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .aboutMe {
-        font-size: 1.8rem;
-        margin-left: 0;
-        text-align: center;
-        padding: 10px 0;
-        text-align: justify; 
-    }
-    .briefs {
-        margin:10px 0;
-        font-size: 0.9rem;
-    }
-    .myself{
-        position: relative;
-        margin-top: 20px;
-    }
-    .myself img {
-        width: 250px;
-        height: 250px;
-    }
-}
-
-@media (max-width: 480px) {
-    #resume {
-        padding: 20px;
-    }
-    .myself img {
-        width: 200px;
-        height: 200px;
-    } 
-    .aboutMe {
-        font-size: 1.5rem;
-        margin-left: 0;
-        text-align: center;
-        padding: 5px 0; 
-    }
-    .briefs{
-        font-size: 0.8rem;
-        overflow-wrap: break-word;
-        text-align: justify;
-    }
-    .wannaKnow {
-        font-size: 1.1rem;
-    }
-    .wannaKnow a {
-        font-size: 1.2rem;
-    }
 }
 
 
 /* Portfolio */
 #portfolio {
     padding: 50px 20px;
-    /* margin-top: 30px; */
+    margin-top: 100px;
 }
 
 .portfolioIntro {
@@ -335,7 +289,7 @@ header .menuLogo {
     font-weight: 500;
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .projectGrid {
@@ -351,7 +305,7 @@ header .menuLogo {
     height: auto;
     border-radius: 15px;
 }
-/* .projectSolar::after {
+.projectSolar::after {
         content: '';
         position: absolute;
         width: 870px;
@@ -366,7 +320,7 @@ header .menuLogo {
 .projectSolar:hover::after {
     transform-origin: left;
     transform: scaleX(1);
-} */
+}
     
 
 .projectSolar img {
@@ -406,8 +360,9 @@ header .menuLogo {
 .skillName {
     color: #f2fcec;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 500;
     margin: 10px 20px; 
+    text-decoration: underline;
 }
 
 .skillsLabel {
@@ -453,12 +408,11 @@ header .menuLogo {
 
 .htmlbox2 {
     height: 5px;
-    width: 80px;
+    width: 60px;
     border: none;
     background-color: rgb(227, 75, 38);
     border-radius: 30px;
 }
-
 .cssbox2 {
     height: 5px;
     width: 70px;
@@ -482,6 +436,13 @@ header .menuLogo {
     background-color: rgb(79, 93, 149);
     border-radius: 30px;
 }
+.sqlbox2{
+    height: 5px;
+    width: 70px;
+    border: none;
+    background-color: rgb(6, 63, 2);
+    border-radius: 30px;
+}
 
 #contact {
     flex: 1;
@@ -497,7 +458,6 @@ header .menuLogo {
     color: #f2fcec;
     font-size: 1.5em;
     font-weight: 600;
-    margin-bottom: 20px;
 }
 
 #contact form {
@@ -564,13 +524,6 @@ header .menuLogo {
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
-}
-.logo-link{
-    margin-top: 10px;
-    text-align: center;
-    color: #f2fcec;
-    font-size: 1.5rem;
-    font-weight: 600;
 }
 footer ul{
     list-style: none;
