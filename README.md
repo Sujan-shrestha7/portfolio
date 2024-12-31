@@ -22,7 +22,7 @@ Contact: Includes a contact form for visitors to reach out to me(Sujan Shrestha)
 
 
 
-Contact Sujan Shrestha at:
+Contact me at:
         Email: sujanstha5732@gmail.com
         Facebook: Sujan Shrestha (Username: Sujanshrestha51)
         instagram: Sujan Shrestha (sujanstha5732)
