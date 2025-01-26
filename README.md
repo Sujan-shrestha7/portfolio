@@ -1,5 +1,5 @@
 # portfolio
-Hey Developers, Its me Sujan Shrestha and I ma tryns make my own portfolio where i will put my projects and my interest and contact section. I am using html css and js for this and is not compeletely made. 
+Hey Developers, Its me Sujan Shrestha, A BCA student and I am tryns make my own portfolio where i will put my projects and my interest and contact section. I am using html css and js for this and is not compeletely made. 
 live at: 
         http://sujan-shrestha7.github.io/portfolio/
 
@@ -16,7 +16,7 @@ This portfolio website showcases my skills, experience, and projects. Here's a b
 
 Header: Contains navigation links to different sections of the website.
 About: Provides information about me, including my background, skills, and experience.
-Services: Highlights the services I offer, such as web development, Consulting .
+Projects: Displays my projects and my works during BCA and in various areas, including consulting .
 Skills: Displays my skills and experience in various areas, including consulting .
 Contact: Includes a contact form for visitors to reach out to me(Sujan Shrestha).
 
